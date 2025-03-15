@@ -2,12 +2,12 @@
 using namespace std;
 void countFreq(vector<int> arr){
 	int n= arr.size(); 
-	int hash[n+1]= {0}; //using hash array
+	int hash[n+1]= {0}; //using hash array, have restrictions (wont work on all the cases)
 	for(int i=0; i<n; i++){
 		hash[arr[i]]++;
 	}
 	for(int i=1; i<=n; i++){
-		cout<<i<<"->"<<hash[i]<<endl;
+		cout<<i<<"->"<<hash[i]<<endl; 
 	}
     //TC- O(N)
 }
@@ -33,5 +33,5 @@ int main(){
 		cin>>v[i];
 	}
 	
-	countFreq(v);
+	countFreq2(v);
 }
