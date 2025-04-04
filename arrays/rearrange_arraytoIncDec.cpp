@@ -18,6 +18,18 @@ void Rearrange(vector<int>&arr){
         cout<<arr[i]<<" ";
     }
 }
+/*Given an array arr of even size, sort the first half of the array in ascending order 
+and the second half in descending order.*/
+void Rearrange2(vector<int>&arr){
+    int n= arr.size();
+    int mid= n/2;
+    sort(arr.begin(), arr.begin()+mid);
+    sort(arr.begin()+mid, arr.end());
+    reverse(arr.begin()+mid, arr.end());
+    for(int i=0; i<n; i++){
+        cout<<arr[i]<<" ";
+    }
+}
 int main(){
     int n;
     cout<<"Enter n: ";
@@ -29,5 +41,5 @@ int main(){
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    Rearrange(arr);
+    Rearrange2(arr);
 }

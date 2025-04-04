@@ -7,7 +7,6 @@ Example2:
 Input: arr[] = {8,10,5,7,9};
 Output: 5
 Explanation: 5 is the smallest element in the array.*/
-
 #include<bits/stdc++.h>
 using namespace std;
 int smallestElement(int arr[], int n){
